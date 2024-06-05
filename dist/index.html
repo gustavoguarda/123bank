@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123bank - Transactions</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>123bank - New Transaction</h1>
+        <form id="transactionForm">
+            <select name="transactionType" id="transactionType" class="input-field" required>
+                <option value="">Select transaction type</option>
+                <option value="deposit">Deposit</option>
+                <option value="transfer">Transfer</option>
+                <option value="bill-payment">Bill Payment</option>
+            </select>
+            <input type="number" name="amount" id="amount" class="input-field" placeholder="0.00" step=".01" min="0" required>
+            <input type="date" name="date" id="date" class="input-field" placeholder="dd/mm/yyyy" required>
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <div class="statement">
+            <h1>Statement</h1>
+            <div class="transaction-record">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
