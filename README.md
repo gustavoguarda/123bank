@@ -20,5 +20,16 @@
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/123bank.git
+   git clone https://github.com/gustavoguarda/123bank.git
    cd 123bank
+2. **Install typescript:**
+
+   ```sh
+   npm install -g typescript
+3. **Run:**
+
+   ```sh
+   tsc -w
+3. **Your browser:**
+    ``` 
+    http://127.0.0.1:5500/dist/index.html
